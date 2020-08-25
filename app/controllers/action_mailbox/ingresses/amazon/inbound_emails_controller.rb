@@ -116,7 +116,7 @@ module ActionMailbox
           return nil unless notification['Type'] == 'Notification'
           return nil unless message['notificationType'] == 'Received'
 
-          message['content']
+          message['mail']
         end
 
         def topic
